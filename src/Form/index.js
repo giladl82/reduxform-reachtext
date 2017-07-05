@@ -6,12 +6,24 @@ import ReachText from './ReachText';
 import './Form.css';
 
 class Form extends React.PureComponent {
-  render() {
-    const { handleSubmit, pristine, change, submitting } = this.props
+  constructor(props) {
+    super(props)
+    this.handleEditorChange = this.handleEditorChange.bind(this)
 
-    const handleEditorChange = (e) => {
-      change('content',  e.target.getContent())
+    this.state = {
+      content: ''
     }
+  }
+
+  handleEditorChange(e) {
+    this.props.change('content', e)
+    this.setState({
+      content: e
+    })
+  }
+
+  render() {
+    const { handleSubmit, pristine, submitting } = this.props
 
     return (
       <div className="form__container">
@@ -27,14 +39,16 @@ class Form extends React.PureComponent {
             </label>
           </div>
           <div className="form__field">
-            <label>Title
+            <label>Content
               <Field
                 ref={input => this.reachText = input}
                 name="content"
                 component="input"
                 type="hidden"
                 />
-              <ReachText handleEditorChange={handleEditorChange} />
+              <ReachText
+                content={this.state.content}
+                handleEditorChange={this.handleEditorChange} />
             </label>
           </div>
           <div className="buttons__container">

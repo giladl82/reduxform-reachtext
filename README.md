@@ -1,5 +1,3 @@
-# Tinymce
+# CKEditor
 
-This branch implement the tinymce text editor inside the redux-form
-
-** There is no API key for the tinymce, becuase this is a demo only
+This branch implement the ckeditor text editor inside the redux-form
