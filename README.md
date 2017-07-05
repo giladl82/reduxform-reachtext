@@ -1,13 +1,5 @@
-# Implementing redux-form + A Reachtext editor
+# Tinymce
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This branch implement the tinymce text editor inside the redux-form
 
-## Branches
-
-* Tinymce - This branch shows how to implement the redux-form using the tinymce editor
-
-* Ckeditor - This branch shows how to implement the redux-form using the ckeditor
-
-The purpose of this project was only to check how to implement a reach text editor inside a redux-form.
-That is why there was no real tought on how the structure the project or its files.
-
+** There is no API key for the tinymce, becuase this is a demo only

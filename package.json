@@ -1,0 +1,23 @@
+{
+  "name": "redux-form-tinymce",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ckeditor": "^4.7.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-tinymce": "^0.5.1",
+    "redux": "^3.7.1",
+    "redux-form": "^6.8.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
